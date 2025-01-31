@@ -29,12 +29,12 @@
   gap: 30px;
 }
 
-.header {
+header {
   display: flex;
-  width: 100%;
+  max-width: 960px;
+  margin: 50px auto;
   height: 100px;
   align-items: center;
-  position: fixed;
 }
 
 .title {
@@ -47,4 +47,14 @@
   padding: 10px;
   border-right: 1px solid #ccc;
   margin-top: -1px;
+  display: flex;
+}
+
+.menu li {
+  border-right: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.menu li:last-child {
+  border-right: none;
 }
