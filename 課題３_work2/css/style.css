@@ -1,0 +1,63 @@
+@charset "ut-8";
+
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+
+.service-section {
+  width: 960px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  overflow: hidden;
+  width: 30%;
+  text-align: left;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+
+.service-content {
+  padding: 15px;
+}
+
+.service-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: green;
+}
+
+.service-content h2 span {
+  width: 5px;
+  height: 20px;
+  background: green;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.service-content p {
+  font-size: 14px;
+  color: rgb(35, 35, 35);
+}
