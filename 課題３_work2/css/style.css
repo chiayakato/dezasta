@@ -7,9 +7,10 @@ body {
 }
 
 .service-section {
-  width: 960px;
+  max-width: 960px;
   margin: 50px auto;
   text-align: center;
+  padding: 0 10px;
 }
 
 .section-title {
@@ -27,14 +28,12 @@ body {
 
 .service-card {
   background: white;
-  overflow: hidden;
   width: 30%;
   text-align: left;
 }
 
 .service-card img {
   width: 100%;
-  height: auto;
 }
 
 .service-content {
@@ -47,6 +46,7 @@ body {
   display: flex;
   align-items: center;
   color: green;
+  margin-bottom: 10px;
 }
 
 .service-content h2 span {
@@ -60,4 +60,20 @@ body {
 .service-content p {
   font-size: 14px;
   color: rgb(35, 35, 35);
+}
+
+@media (max-width: 400px) {
+  .service-container {
+    display: block;
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service-card img {
+    width: 100%;
+    height: auto;
+  }
 }
