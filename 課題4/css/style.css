@@ -1,0 +1,23 @@
+@charset "ut-8";
+
+.logo {
+  text-align: left;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header img {
+  text-align: center;
+}
+
+container_service.service_block {
+  display: flex;
+  justify-content: space-between;
+}
