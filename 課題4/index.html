@@ -7,13 +7,19 @@
     <title>第4回課題 Design Cafe</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
     <header>
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+
             </div>
         </div>
         <div class="header_wrap">
@@ -29,22 +35,63 @@
                     <li><a href="">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">EVENT</a></li>
+                    <li><a href="">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="トップページ">
-            <div class="トップページ_文章">
-                <p class="文章_サブタイトル">Have a happy day From a cup of coffee.</p>
-                <p class="文章_タイトル">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
-                <p class="テキスト">
-                    毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                    足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
-                </p>
+
+        <div class="hero_inner">
+            <p class="hero_subtitle">Have a happy day From a cup of coffee.</p>
+            <p class="hero_title">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
+            <p class="hero_text">
+                毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+            </p>
+        </div>
+
+        <section class="about">
+            <div class="about_container">
+                <div class="about_image">
+                    <img src="./images/pc_about-100.jpg" alt="コーヒーを持つ手">
+                </div>
+
+                <div class="about_text">
+                    <img src="./images/about_us@2x.png" alt="ABOUT US" class="about_title">
+                    <h2>私たちが提供する<br>こだわりのコーヒー</h2>
+                    <p>
+                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    </p>
+                </div>
             </div>
         </section>
+
+
     </main>
 
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>
