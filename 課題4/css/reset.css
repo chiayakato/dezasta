@@ -54,3 +54,7 @@ img {
 body {
   background-color: #e8d9bf;
 }
+
+p {
+  font-feature-settings: "palt";
+}

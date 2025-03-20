@@ -142,6 +142,7 @@ header {
 .hero_text {
   font-size: 23px;
   line-height: 1.65;
+  letter-spacing: 0.1em;
 }
 
 .about {
@@ -178,9 +179,69 @@ header {
   font-size: 44px;
   margin-bottom: 38px;
   line-height: 1.38;
+  font-weight: normal;
 }
 
 .about_text p {
   font-size: 16px;
   line-height: 1.62;
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #fff;
+}
+
+.slick-dots.slick-slider {
+  margin-bottom: 0;
+}
+
+.about_title {
+  font-size: 82px;
+}
+
+.menu_container {
+  display: flex;
+  margin: 49px;
+}
+
+.menu_text {
+  text-align: center;
+  margin: 108px;
+}
+
+.menu_drink {
+  width: 500px;
+  height: auto;
+  border-radius: 0 50px 0 0;
+}
+
+.menu_food {
+  width: 500px;
+  height: auto;
+  border-radius: 0 50px 0 0;
+}
+
+.menu_sweets {
+  width: 500px;
+  height: auto;
+  border-radius: 0 50px 0 0;
+}
+
+.menu_subtitle {
+  color: #d30202;
+  size: 38px;
+}
+
+.menu_img_text {
+  size: 17px;
+}
+
+.gallery_container {
+  display: flex;
+  flex-wrap: nowrap;
 }

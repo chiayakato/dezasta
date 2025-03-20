@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>第4回課題 Design Cafe</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
@@ -18,6 +22,13 @@
                 <picture>
                     <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
                     <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+
+            </div>
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/slider_2.jpg" alt="店内の様子">
                 </picture>
 
             </div>
@@ -68,8 +79,11 @@
                 </div>
 
                 <div class="about_text">
-                    <img src="./images/about_us@2x.png" alt="ABOUT US" class="about_title">
-                    <h2>私たちが提供する<br>こだわりのコーヒー</h2>
+                    <h2>
+                        <img src="./images/about_us@2x.png" alt="ABOUT US" class="about_title">
+                    </h2>
+
+                    <p class="about_title">私たちが提供する<br>こだわりのコーヒー</p>
                     <p>
                         サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                         サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
@@ -81,6 +95,93 @@
             </div>
         </section>
 
+        <section class="menu">
+            <div class="menu_text">
+                <h3>
+                    <img src="./images/menu@2x.png" alt="MENU" class="menu_title">
+                </h3>
+            </div>
+
+            <div class="menu_container">
+                <div class="menu_drink">
+                    <img src="./images/drink_sp@2x-100.jpg" alt="飲み物">
+
+                    <p class="menu_subtitle">
+                        Drink
+                    </p>
+
+                    <p class="menu_img_text">
+                        ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                    </p>
+                </div>
+
+                <div class="menu_food">
+                    <img src="./images/food_sp@2x-100.jpg" alt="食べ物">
+
+                    <p class="menu_subtitle">
+                        Food
+                    </p>
+
+                    <p class="menu_img_text">
+                        フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                    </p>
+                </div>
+
+                <div class="menu_sweets">
+                    <img src="./images/cake_sp@2x-100.jpg" alt="スイーツ">
+
+                    <p class="menu_subtitle">
+                        Sweets
+                    </p>
+
+                    <p class="menu_img_text">
+                        スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="GALLERY">
+            <div class="menu_text">
+                <h4>
+                    <img src="./images/gallery@2x.png" alt="GALLERY" class="gallery_title">
+                </h4>
+            </div>
+
+            <div class="gallery_container">
+                <div class="gallery_image">
+                    <img src="./images/pc_gallary_05-100.jpg" alt="画像1">
+                    <img src="./images/pc_gallary_04-100.jpg" alt="画像2">
+                    <img src="./images/pc_gallary_03-100.jpg" alt="画像3">
+                    <img src="./images/pc_gallary_02-100.jpg" alt="画像4">
+                    <img src="./images/pc_gallary_01-100.jpg" alt="画像5">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="EVENT">
+            <div class="event_text">
+                <h5>
+                    <img src="./images/event@2x.png" alt="EVENT" class="event_title">
+                </h5>
+            </div>
+
+            <div class="ACCESS">
+                <div class="access_text">
+                    <h6>
+                        <img src="./images/access@2x.png" alt="ACCESS" class="access_title">
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+
 
     </main>
 
@@ -90,6 +191,13 @@
                 $('.sp_btn').toggleClass('open');
                 $('.sp_nav').fadeToggle();
             })
+
+            $('.header_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+            });
         })
     </script>
 </body>
